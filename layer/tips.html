@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+
+        .tips *{
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            font-family: 微软雅黑;
+        }
+
+        .tips{
+
+            z-index: 19891061;
+            position: absolute;
+            /*left: 1264.5px;
+            top: 1667px;  */
+            pointer-events: auto;
+        }
+        .tips-arrow{
+            margin: 10px 0;
+            height:0px; width:0px;
+            display:block;
+            float: left;
+            border-right:10px solid #FFAA25;
+            border-top:8px solid transparent;
+            border-bottom:0px solid transparent;
+        }
+
+        .tips-content{
+            height: 25px;
+            background: #FFAA25;
+            float:left;
+            line-height: 25px;
+            padding: 3px 6px;
+            text-align: center;
+            color:white;
+            border: 1px solid #FFAA25;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tips">
+        <span class="tips-arrow"></span>
+        <div class="tips-content">默认就是向右的</div>
+    </div>
+</body>
+</html>

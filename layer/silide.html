@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: "微软雅黑";
+        }
+        .slideBox {
+            width: 450px;
+            height: 230px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #ddd;
+        }
+        .slideBox a {
+            text-decoration: none;
+            color: #333;
+        }
+        .slideBox .hd {
+            height: 15px;
+            overflow: hidden;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            z-index: 1;
+        }
+        .slideBox .hd li {
+            float: left;
+            margin-right: 2px;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .slideBox .hd li:hover {
+            background: #f00;
+            color: #fff;
+        }
+    </style>
+    <script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+
+
+</head>
+<body>
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <ul><li id="kkk">1</li><li>2</li><li>3</li></ul>
+        </div>
+        <div class="bd">
+            <ul id="fdf">
+                <li><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic1.jpg" /></a></li>
+                <li><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic2.jpg" /></a></li>
+                <li><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic3.jpg" /></a></li>
+            </ul>
+        </div>
+
+        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+
+    </div>
+<button>fewfw</button>
+    <script type="text/javascript" src="slide.js"></script>
+</body>
+</html>

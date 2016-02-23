@@ -1,0 +1,116 @@
+.layer * {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.layer-border {
+    border: 1px solid #B2B2B2;
+    border: 1px solid rgba(0,0,0,.3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: 1px 1px 5px rgba(0,0,0,.2); /* 老的 Firefox */
+}
+.layer {
+    min-height: 100px;
+    min-width: 200px;
+    background-color: #fff;
+    background-clip: content-box;//背景范围，ie9+
+    box-shadow: 1px 1px 50px rgba(0,0,0,.3);
+    position: fixed;
+    pointer-events: auto;
+    top: 20%;
+    left:30%;
+    z-index: 19891015;
+    overflow: hidden;
+}
+.layer-title {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #d5d5d5;
+    font-size: 14px;
+    color:#5FBFE7;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color:#eaeaea;
+    padding-left: 20px;
+}
+.layer-content {
+    padding: 20px;
+}
+.layer-content>*{/* div > p 第一个div下的所有p元素 ；ul li:first-child (ul>:first-child)下第一个li元素*/
+    margin: auto;
+}
+.layer-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+    height: 12px;
+    border: 1px solid #2D93CA;
+    text-decoration:none;
+    text-align: center;
+    color: #2D93CA;
+    font-size: 12px;
+    font-family: "Simsun", sans-serif;
+    font-weight: bold;
+    padding: 1px 0;
+}
+a.layer-close:hover{
+    text-shadow: 1px 1px 1px #3CA3D7;
+    box-shadow: 1px 1px 1px #3CA3D7;
+}
+
+
+.layer-btn {
+    text-align: center;
+    margin:10px 0 15px 0;
+}
+.layer-btn a {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 8px;
+    padding: 0 20px;
+    background: #5FBFE7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    /* display: none;*/
+}
+.layer-btn a:hover{
+    filter:alpha(opacity=80); /*IE滤镜，透明度80%*/
+    -moz-opacity:0.8; /*Firefox私有，透明度80%*/
+    opacity:0.8;/*其他，透明度80%#A6BBCE*/
+}
+.icon1{
+    background: url("images/layer1.png")no-repeat 15px center;
+}
+.icon2{
+    background: url("images/layer2.png")no-repeat 15px center;
+}
+.icon3{
+    background: url("images/layer3.png")no-repeat 15px center;
+}
+.icon4{
+    background: url("images/layer4.png")no-repeat 15px center;
+}
+.icon5{
+    background: url("images/layer5.png")no-repeat 15px center;
+}
+.icon6{
+    background: url("images/layer6.png")no-repeat 15px center;
+}
+.icon7{
+    background: url("images/layer7.png")no-repeat 15px center;
+}
+.icon8{
+    background: url("images/layer8.png")no-repeat 15px center;
+}
+.icon9{
+    background: url("images/layer9.png")no-repeat 15px center;
+}

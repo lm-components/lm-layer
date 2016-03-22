@@ -8,8 +8,8 @@
  *
  * 举例说明：
  * $(".dd").layer({
- *          width:200px;                     //内容的宽度，最好设置   默认180
- *          height:100px;                    //内容的高度，最好设置   默认50
+ *          width:200px;                     //内容的宽度(不包含padding，margin，border)，为了让图标显示到内容正中间，最好设置   默认180
+ *          height:100px;                    //内容的高度(不包含padding，margin，border)，为了让图标显示到内容正中间，最好设置   默认50
  *          icon：1,2,3                      //弹框表情
  *          overflow:"hidden"                //隐藏滚动条
  *          closeCallback:function           //关闭按钮时调用的函数
@@ -226,7 +226,7 @@
     $.fn.layer = function(obj) {
         if(window.console && window.console.log)console.log(obj.content);
         if(!obj.content){alert("请添加内容对象！");return;}// 无内容不弹框
-        $.extend(obj,defaultOpts);
+        obj = $.extend({},defaultOpts,obj);
         if(obj.addEvent){
             $(this).on(obj.addEvent,function(){
                layer.call(this,obj);
